@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
     <style>
-        body
-        {
+        body {
             background-color: rgb(36, 35, 35);
         }
-        *{
+
+        * {
             padding: 0;
             margin: 0;
         }
+
         .logo {
-           
+
             display: flex;
             width: 135px;
             height: 70px;
-           
+
         }
-        header nav{
-           
+
+        header nav {
+
             display: flex;
             justify-content: space-around;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        nav{
+
+        nav {
             align-items: center;
             justify-content: center;
         }
@@ -36,24 +39,67 @@
             display: flex;
             list-style: none;
             align-items: center;
-           justify-items: center;
+            justify-items: center;
             gap: 50px;
             color: aliceblue;
 
-           
-            
+
+
         }
-        .bar ul li{
+
+        .bar ul li {
             display: flex;
             align-items: center;
             cursor: pointer;
         }
-       
+        button
+        {
+            margin: 4px;
+        }
 
-        nav {
+        .container {
+            margin: 120px;
+            display: grid;
+            width: 90vw;
+            height: 90vh;
+            grid-template-rows: 125px 125px 125px;
+            grid-template-columns: 255px 255px 255px;
+            justify-content: center;
 
+            gap: 50px;
+
+        }
+
+        .item {
+
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            background-color: rgb(43, 44, 44);
+        }
+
+        .item h3 {
+            color: azure;
+            margin: 25px 80px;
+
+        }
+        #b1
+        {
             
-           
+            padding: 5px 10px;
+            background-color: rgb(47, 146, 207);
+            border-radius: 6px;
+            border: none;
+            color: aliceblue;
+        }
+        #b2
+        {
+            padding: 5px 10px;
+            background-color: rgb(55, 213, 105);
+            border-radius: 6px;
+            border: none;
+            color: aliceblue;
         }
     </style>
 </head>
@@ -67,16 +113,23 @@
             <nav>
                 <div class="bar">
                     <ul>
-                        <li><span>Pricing</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
-                            
+                        <li><span>Pricing</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
+
 
                         </li>
-                        <li><span> Product</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
-                            </li>
-                        <li><span> Resouces</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
-                            </li>
-                        <li><span>About us </span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
-                            </li>
+                        <li><span> Product</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
+                        </li>
+                        <li><span> Resouces</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
+                        </li>
+                        <li><span>About us </span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO2RQQ6AIAwE8WU8x6NfkRuvdYyxJsZAFanx0jlvZkoIwXGc/wAGID7YxW37Rp6ABZiU3Sib3BSRwMxOMXKS0xy4i9Ar1yJYyQv/gYgPeeqWV15ic7kSyebyS+QbueOEGiuuVNkk48jbPAAAAABJRU5ErkJggg==">
+                        </li>
+                        <li><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABI0lEQVR4nO2VPWpCQRCAVzCFvuABrK3S2EQDz59GQyIhZ0ir3sUTCNaW5gziBUQ7K5M+TSws5AsPJrBJdHU1O1j4wcKyO8zHzNvhGXPhggbAE/DO//MGtFziJCAUS5c4KMZDvAFqQF32auKRdfeqKW5Yd00t8RxIAdeyUnK2jxioniJuy1kX6Mi+c2hVx4o/gMiq8rv6SO7+VOnIWfUR9xwxvS3iiiO+5iMuOGIK+9oNDCX23rfVsSx7djcyz1sfjsQXgRlQknx9X/ExlCXHldWZtYZ4AeStXA/AKrQ4tnKkgYzs70KLK0AOeAamMn638iaCig/CnOP/uBVIvgQed4o9PkEyq5F3Il9+ST+BG6MBP3lRkSZY0oHRBBgDEyCrKg7BF5ZymG/C6wcqAAAAAElFTkSuQmCC">
+                        </li>
 
                     </ul>
                 </div>
@@ -85,6 +138,52 @@
 
         </nav>
     </header>
+    <section>
+        <div class="container">
+            <div class="item">
+                <h3>English</h3>
+                <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>German</h3>
+                <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>Italian</h3>
+                <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>Spanish</h3>
+                <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>French</h3> <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>Portuguese</h3>
+                <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>Japanese</h3> <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>Korean</h3>
+                <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+            <div class="item">
+                <h3>Chinese</h3> <button id="b1">Download 32-bit</button>
+                <button id="b2">Download 64-bit</button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
