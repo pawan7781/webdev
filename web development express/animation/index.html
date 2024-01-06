@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations properties</title>
+    <style>
+        .container
+        {
+            width: 90vw;
+            height: 90vh;
+            background-color: rgb(111, 118, 244);
+        }
+        .sphere1
+        {
+            background-color: lightsalmon;
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+            border: 3px solid rgb(163, 143, 232);
+            animation: identifier1 5s ease-in-out 1s infinite alternate-reverse;
+
+        }
+        .sphere2
+        {
+            background-color: rgb(231, 247, 11);
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+            border: 3px solid rgb(194, 212, 120);
+            animation: identifier 5s ease-in-out 1s infinite alternate-reverse;
+        }
+        @keyframes identifier {
+            from
+            {
+                /* background-color: cadetblue; */
+            }
+            to
+            {
+                transform: translate(900px);
+                background-color: burlywood;
+            }
+        }
+        @keyframes identifier1 {
+            from
+            {
+                transform: translate(900px);
+               
+            }
+            to
+            {
+               
+                background-color: burlywood;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sphere1"></div>
+        <div class="sphere2"></div>
+    </div>
+</body>
+</html>
