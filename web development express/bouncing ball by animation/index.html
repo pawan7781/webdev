@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bouncing ball</title>
     <style>
-        .container
-        {
+        .container {
             background-color: rgb(123, 197, 197);
             width: 95vw;
-            height: 95vh;
-           
+            height: 100vh;
+            position: relative;
+
         }
-        .ball
-        {
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .ball {
             background-color: rgb(119, 27, 204);
             border-radius: 50px;
             width: 60px;
-            height:60px;
-            bottom: 0px;
-            
+            height: 60px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            animation: x 3s linear infinite,
+            y 1s ease-out infinite alternate  ;
+
+        }
+
+        @keyframes x {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes y {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
     <main>
         <div class="container">
@@ -31,6 +62,7 @@
             </div>
         </div>
     </main>
-    
+
 </body>
+
 </html>
